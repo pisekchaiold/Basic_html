@@ -1,14 +1,11 @@
-let score = 50;
-score = 40;
-if (score >= 50) {
+let buttonOK = document.getElementById('buttonOK');
+let message = document.getElementById('message');
 
-    console.log('ต้องใส่หน้ากากแล้วนะ อันตราย')
-    
-} else {
-    console.log('ปกติไม่ต้องทำอะไร')
+function showMessage(){
+    message.innerHTML = 'เข้าได้แล้ว';
 }
 
 
 
-
+buttonOK.addEventListener('click', showMessage);
 
